@@ -9,9 +9,9 @@
     "peertube",
     "plugin"
   ],
-  "homepage": "https://framagit.org/Livingston/peertube-plugin-simplelogo",
-  "author": "John Livingston",
-  "bugs": "https://framagit.org/framasoft/peertube/peertube-plugin-simplelogo/issues",
+  "homepage": "https://github.com/ipbc-dev/peertube-plugin-bittube-logo-favicon",
+  "author": "Iván Cabaleiro",
+  "bugs": "https://github.com/ipbc-dev/peertube-plugin-bittube-logo-favicon/issues",
   "library": "./main.js",
   "staticDirs": {
     "images": "public/images"

@@ -24,3 +24,7 @@ The actual method is not quite good. We have to wait the response of a peertubeH
 I plan to find a better way.
 
 Later, I planned to let you upload a file, automaticaly resize it and store it.
+
+# Special Thanks to
+
+John Livingstone and Framasoft team for develop and share the first version. https://framagit.org/Livingston/peertube-plugin-simplelogo
