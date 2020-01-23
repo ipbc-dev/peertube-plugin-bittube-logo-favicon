@@ -1,6 +1,6 @@
 {
   "name": "peertube-plugin-bittube-logo-favicon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PeerTube logo && favicon plugin for BitTube.video",
   "engine": {
     "peertube": ">=1.4.0-rc1"

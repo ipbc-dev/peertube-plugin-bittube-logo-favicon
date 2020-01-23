@@ -7,7 +7,7 @@ function register ({ peertubeHelpers }) {
       if ( s['icon_url'] ) {
         const baseStaticUrl = peertubeHelpers.getBaseStaticRoute()
         const imageUrl = baseStaticUrl + '/images/BitTube-logo.svg';
-        const faviconUrl = baseStaticUrl + '/favicon.svg';
+        const faviconUrl = 'https://bittube.tv/favicon.ico';
 
         // Check if it's standard logo saved on static directory
         if(s['icon_url'].toLowerCase() == 'bittube'){
