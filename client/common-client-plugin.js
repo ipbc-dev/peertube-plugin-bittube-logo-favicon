@@ -4,17 +4,21 @@ function register ({ peertubeHelpers }) {
       if ( !s ) {
         return
       }
-      if ( s['icon_url'] ) {
+      if ( s['icon_url'] != undefined ) {
         const baseStaticUrl = peertubeHelpers.getBaseStaticRoute()
         const imageUrl = baseStaticUrl + '/images/BitTube-logo.svg';
-        const faviconUrl = 'https://bittube.tv/favicon.ico';
+        const faviconUrl = baseStaticUrl + '/images/favicon.png';
 
         // Check if it's standard logo saved on static directory
-        if(s['icon_url'].toLowerCase() == 'bittube'){
+        if(s['icon_url'].toLowerCase() == 'bittube' || s['icon_url'] == '' ){
           s['icon_url'] = imageUrl;
         }
+        //Check if width is empty, we set 33px as default
+        if(s['icon_width'] == ''){
+          s['icon_width'] = '33px';
+        }
         // Check if it's standard favicon saved on static directory
-        if(s['favicon_url'].toLowerCase() == 'bittube'){
+        if(s['favicon_url'].toLowerCase() == 'bittube' || s['favicon_url'] == ''){
           s['favicon_url'] = faviconUrl;
         }
 
@@ -22,7 +26,7 @@ function register ({ peertubeHelpers }) {
         document.head.appendChild(style)
         const sheet = style.sheet
         let rule = "#custom-css .icon.icon-logo { "
-        rule+= " display: inline-block; "
+        rule+= " display: inline-block; background-size: cover; margin-right: 5px; " // BitTube standard CSS, can be overwritten by additional css
         rule+= " background: url('"+s['icon_url']+"'); "
         if ( s['icon_width'] ) {
           rule+= " width: "+s['icon_width']+"; "
