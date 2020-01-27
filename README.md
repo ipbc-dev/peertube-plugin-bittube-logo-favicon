@@ -12,9 +12,9 @@ Once you have installed the plugin, go to the plugin's setup page.
 There are several fields. If you leave all of them empty, the default BitTube logo and favicon will be setted up.
 
 - Icon url (optional): if you want to change the logo icon (on the top left of your instance). Put here the url of your file, you have to host this file by your own. If you want to use BitTube default logo, put here 'bittube' or leave it empty.
-- Icon width: if your icon file is not the same width that the original peertube logo, you can specify here the width. For example: "35px". Default is 33px.
-- Additional Icon css: here you can add you own css properties separated by semi-colon.
-- Favicon url: if you want to change the favicon, put here the url of your file, you have to host it by your own. Make sure it is a suitable file for a favicon. If you want to use BitTube default favicon, put here 'bittube' or leave it empty.
+- Icon width (optional): if your icon file is not the same width that the original peertube logo, you can specify here the width. By default is 33px.
+- Additional Icon css (optional): here you can add you own css properties separated by semi-colon.
+- Favicon url (optional): if you want to change the favicon, put here the url of your file, you have to host it by your own. Make sure it is a suitable file for a favicon. If you want to use BitTube default favicon, put here 'bittube' or leave it empty.
 
 **Important Note:** There is no sanitarization for your inputs (neither url or width). We assume that administrators are not evil, and don't do XSS and co.
 

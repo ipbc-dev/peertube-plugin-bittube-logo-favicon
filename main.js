@@ -3,13 +3,13 @@ async function register ({
 }) {
   registerSetting({
     name: 'icon_url',
-    label: "Icon Url (Type 'bittube' for BitTube standard icon)",
+    label: "Icon Url (Type 'bittube' or leave it empty for BitTube standard icon)",
     type: 'input',
     private: false
   })
   registerSetting({
     name: 'icon_width',
-    label: 'Icon width (example: 35px)',
+    label: 'Icon width (default: 33px)',
     type: 'input',
     private: false
   })
@@ -21,7 +21,7 @@ async function register ({
   })
   registerSetting({
     name: 'favicon_url',
-    label: "Favicon Url (Type 'bittube' for BitTube standard icon)",
+    label: "Favicon Url (Type 'bittube' or leave it empty for BitTube standard icon)",
     type: 'input',
     private: false
   })
