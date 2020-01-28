@@ -12,9 +12,9 @@ function register ({ peertubeHelpers }) {
       if(!s['icon_url'] || s['icon_url'].toLowerCase() == 'bittube' ){
         s['icon_url'] = imageUrl;
       }
-      //Check if width is empty, we set 33px as default
+      //Check if width is empty, we set 32px as default
       if(!s['icon_width'] || s['icon_width'] == ''){
-        s['icon_width'] = '33px';
+        s['icon_width'] = '32px';
       }
       // Check if it's standard favicon saved on static directory
       if(!s['favicon_url'] || s['favicon_url'].toLowerCase() == 'bittube'){
