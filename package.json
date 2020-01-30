@@ -10,7 +10,7 @@
     "plugin"
   ],
   "homepage": "https://github.com/ipbc-dev/peertube-plugin-bittube-logo-favicon",
-  "author": "Iván Cabaleiro",
+  "author": "BitTube",
   "bugs": "https://github.com/ipbc-dev/peertube-plugin-bittube-logo-favicon/issues",
   "library": "./main.js",
   "staticDirs": {
